@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col"></th> -->
+            <th scope="col">Elemento X</th>
+            <!-- <th scope="col">Elemento Y</th>
+          <th scope="col">Elemento Z</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let elemX of elementoX; index as i">
+            <td>{{ elemX }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>El <em><b>promedio</b></em> es:  {{ promedioX }} </p>
+    </div>
+
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col"></th> -->
+            <th scope="col">Elemento y</th>
+            <!-- <th scope="col">Elemento Y</th>
+          <th scope="col">Elemento Z</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let elemY of elementoY; index as i">
+            <td>{{ elemY }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>La <em><b>Mediana</b></em> de la variable Y es: {{ mediana }}</p>
+    </div>
+
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col"></th> -->
+            <th scope="col">Elemento Z</th>
+            <!-- <th scope="col">Elemento Y</th>
+          <th scope="col">Elemento Z</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let elemZ of elementoZ; index as i">
+            <td>{{ elemZ }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p> La <em><b>Moda</b></em> para la variable Z es: {{ moda }} <br> Esta se repite {{ veces }} Veces. </p>
+    </div>
+  </div>
+</div>

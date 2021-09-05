@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h2 (click)="cambiarMateria()" >Listados de notas de estudiantes para la materia   {{ materia }} </h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Materia</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Nota</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes">
+        <td>{{ estudiante.id }}</td>
+        <td>{{ estudiante.materia }}</td>
+        <td>{{ estudiante.nombre }}</td>
+        <td>{{ estudiante.nota }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

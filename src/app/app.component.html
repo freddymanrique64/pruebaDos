@@ -1,0 +1,54 @@
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample">
+    Prueba 2
+  </button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed"><div class="card">
+    <div class="card-body">
+      Desarrollador: Freddy Manrique
+
+    </div>
+  </div>
+</div>
+
+
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>Ejercicio 1</a>
+    <ng-template ngbNavContent>
+      <app-ejercicio-uno></app-ejercicio-uno>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>Ejercicio 2</a>
+    <ng-template ngbNavContent>
+      <app-ejercicio-dos></app-ejercicio-dos>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>Ejercicio 3</a>
+    <ng-template ngbNavContent>
+      <app-ejercicio-tres></app-ejercicio-tres>
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<!-- <pre>Active: {{ active }}</pre> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
