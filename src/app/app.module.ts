@@ -9,8 +9,6 @@ import { EjercicioUnoComponent } from './ejercicio-uno/ejercicio-uno.component';
 import { EjercicioDosComponent } from './ejercicio-dos/ejercicio-dos.component';
 import { EjercicioTresComponent } from './ejercicio-tres/ejercicio-tres.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxFileDropModule } from 'ngx-file-drop';
-import { NgxFileDragDropModule } from 'ngx-file-drag-drop';
 
 
 @NgModule({
